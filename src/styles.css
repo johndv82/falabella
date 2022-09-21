@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background: rgb(244,244,247);
+    background: linear-gradient(90deg, rgba(244,244,247,1) 0%, rgba(170,213,0,1) 35%, rgba(255,255,255,1) 100%); 
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+   
+  .spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    /*top: 50%;
+    left: 50%;*/
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    margin-left: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    border-top-color: #000000;
+    animation: spinner .8s linear infinite;
+  }
